@@ -27,6 +27,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.22'
     annotationProcessor 'org.projectlombok:lombok:1.18.22'
     implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'io.jsonwebtoken:jjwt:0.9.1'
 
 }
 
