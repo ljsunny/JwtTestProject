@@ -3,6 +3,7 @@ package com.jwt.test.api01.config;
 import com.jwt.test.api01.filter.APILoginFilter;
 import com.jwt.test.api01.security.APIUserDetailService;
 import com.jwt.test.api01.security.handler.APILoginSuccessHandler;
+
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 
@@ -61,6 +62,7 @@ public class CustomSecurityConfig {
         APILoginSuccessHandler successHandler = new APILoginSuccessHandler();
         //SuccessHandler 설정
         apiLoginFilter.setAuthenticationSuccessHandler(successHandler);
+
 
         //APILoginFilter 의 위치조정
         http.addFilterBefore(apiLoginFilter, UsernamePasswordAuthenticationFilter.class);
