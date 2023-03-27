@@ -1,4 +1,4 @@
-package com.jwt.test.api01.filter;
+package com.jwt.test.api01.security.filter;
 
 import com.jwt.test.api01.security.exception.AccessTokenException;
 import com.jwt.test.api01.util.JWTUtil;

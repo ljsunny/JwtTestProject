@@ -1,11 +1,10 @@
 package com.jwt.test.api01.config;
 
-import com.jwt.test.api01.filter.APILoginFilter;
-import com.jwt.test.api01.filter.TokenCheckFilter;
+import com.jwt.test.api01.security.filter.APILoginFilter;
+import com.jwt.test.api01.security.filter.TokenCheckFilter;
 import com.jwt.test.api01.security.APIUserDetailService;
 import com.jwt.test.api01.security.handler.APILoginSuccessHandler;
 import com.jwt.test.api01.util.JWTUtil;
-import jakarta.servlet.Filter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 
