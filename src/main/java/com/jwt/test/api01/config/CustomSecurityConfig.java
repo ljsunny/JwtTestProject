@@ -1,6 +1,7 @@
 package com.jwt.test.api01.config;
 
 import com.jwt.test.api01.security.filter.APILoginFilter;
+import com.jwt.test.api01.security.filter.RefreshTokenFilter;
 import com.jwt.test.api01.security.filter.TokenCheckFilter;
 import com.jwt.test.api01.security.APIUserDetailService;
 import com.jwt.test.api01.security.handler.APILoginSuccessHandler;
@@ -69,6 +70,8 @@ public class CustomSecurityConfig {
                 tokenCheckFilter(jwtUtil),
                 UsernamePasswordAuthenticationFilter.class
         );
+        //refreshToken 호출 처리
+        http.addFilterBefore(new RefreshTokenFilter("/refreshToken", jwtUtil),TokenCheckFilter.class);
         //csrf 비활성화
         http.csrf().disable();
         //세션 끔
