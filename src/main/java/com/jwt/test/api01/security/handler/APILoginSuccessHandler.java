@@ -21,7 +21,7 @@ public class APILoginSuccessHandler implements AuthenticationSuccessHandler {
     private final JWTUtil jwtUtil;
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
-        log.info("Login Sucess Handler...");
+        log.info("Login Success Handler...");
 
         response.setContentType(MediaType.APPLICATION_JSON_VALUE);
 

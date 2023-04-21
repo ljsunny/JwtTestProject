@@ -31,7 +31,7 @@ public class TokenCheckFilter extends OncePerRequestFilter {
         }
 
         log.info("Token Check Filter...");
-        log.info("JWTUtil:"+jwtUtil);
+        log.info("JWTUtil:" + jwtUtil);
 
         try {
             validateAccessToken(request);

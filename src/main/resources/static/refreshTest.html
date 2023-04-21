@@ -28,7 +28,7 @@
               console.log(res.data);
 
               const newAccessToken = res.data.accessToken;
-              const newRefreshToken = res.data.refreshToken;
+              const newRefreshToken = res.data.refrehToken;
 
               document.querySelector(".accessResult").innerHTML = oldAccessToken!==newAccessToken? newAccessToken:'OLD';
               document.querySelector(".refreshResult").innerHTML = oldRefreshToken!==newRefreshToken? newRefreshToken:'OLD';
