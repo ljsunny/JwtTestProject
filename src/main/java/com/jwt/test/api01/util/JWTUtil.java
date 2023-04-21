@@ -39,6 +39,7 @@ public class JWTUtil {
                 .setExpiration(Date.from(ZonedDateTime.now().plusMinutes(time).toInstant()))
                 .signWith(SignatureAlgorithm.HS256,key.getBytes())
                 .compact();
+        System.out.println(jwtStr);
 
         return jwtStr;
     }
